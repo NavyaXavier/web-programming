@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>change the background color with javascript</title>
+<script>
+function changeBodyBg(color)
+{
+	document.body.style.background=color;
+}
+function changeHeadingBg(color)
+{
+	document.getElementById("heading").style.background=color;
+}
+</script>
+</head>
+<body>
+<h1 id="heading">this is a heading</h1>
+<p>this is a paragraph of text</p>
+<hr>
+<div>
+<label>change webpage background to : </label>
+<button type="button" onclick="changeBodyBg('yellow');">yellow</button>
+<button type="button" onclick="changeBodyBg('lime');">lime</button>
+<button type="button" onclick="changeBodyBg('orange');">orange</button>
+</div>
+<br>
+<div>
+<label>change heading background</label>
+<button type="button" onclick="changeHeadingBg('red');">red</button>
+<button type="button" onclick="changeHeadingBg('green');">green</button>
+<button type="button" onclick="changeHeadingBg('blue');">blue</button>
+</div>
+</body>
+</html>
